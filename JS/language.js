@@ -1,6 +1,6 @@
 
 
-if( !sessionStorage ['_lang'] )sessionStorage ['_lang']='ES';
+if( !sessionStorage ['_lang'] )sessionStorage ['_lang']='EN';
 
 
 function change_lang(lang){
