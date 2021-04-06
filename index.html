@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>nicolas zulaica</title>
+  <title>NZR</title>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="CSS/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/726e180aed.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="JS/language.js"></script>
+  <script type="text/javascript" src="JS/script.js"></script>
 </head>
 
 <body>
-  <div>
-    <h2> menu1 </h2>
-    <h2> menu2 </h2>
-    <h2> menu3 </h2>
-  </div>
-  <h1>Title</h1>
-  <p>Text text text</p>
+	<div id="container">
+		<div id="navbar">
+			<div id="nav_logo">
+				
+				<a><i class="fas fa-code"></i></a>
+				<a>N. Zulaica</a>
+			</div>
+			
+			
+			<input type="checkbox" class="hamb_toggle">
+			<div class="hamb" > <div></div> </div>
+			
+			<div id="nav_opt">
+				<a href="index.html" class="selected">Home</a>
+				<a href="projects.html" >Projects</a>
+				
+				<div>
+					<div id="lang_opt" style="display:none;">
+						<a onclick="change_lang('ES')" title="Español">ES</a>
+						<a onclick="change_lang('EN')" title="English">EN</a>
+						<a onclick="change_lang('CH')" title="中文">CH</a>
+					</div>
+					<a id="language" onclick="toggle_display('lang_opt','inline-block')"><i class="fas fa-globe"></i></a>
+					<a id="theme" onclick="toggleTheme()"><i class="fas fa-adjust"></i></a>
+				</div>
+			</div>
+			
+		</div>
+		<section id="main">
+			<article class="def_art">
+				<div class="img_holder">
+					<img src="Media/img/gears2.png" alt="WIP">
+				</div>
+				<div>
+					<h1>Work In Progress</h1>
+					<p>This page is currently in the making. As am I, striving foward every day in order improve</p>
+					<p>Sed tellus dolor, sodales a condimentum eu, elementum et odio. Donec ullamcorper vel risus eu convallis. Sed vel ipsum tellus. Aenean viverra nibh non dolor ultricies commodo non in nibh. Aliquam non malesuada dolor. Nullam bibendum eu mi sit amet scelerisque.</p>
+				</div>
+			</article>
+			<hr>
+			<article class="alt_art">
+				<div>
+					<h1>Code</h1>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+					<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				</div>
+				<div class="img_holder">
+					<img src="Media/img/code.png" alt="WIP" class="dm_inverse">
+				</div>
+			</article>
+			<hr>
+			<article class="txt_art">
+				<div>
+					<h1>The Main Languages of the Web</h1>
+					<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+					<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+				</div>
+				<div>
+					<h1>Flex-wrap</h1>
+					<p>The flex-wrap property is a sub-property of the Flexible Box Layout module.</p>
+					<p>It defines whether the flex items are forced in a single line or can be flowed into multiple lines. If set to multiple lines, it also defines the cross-axis which determines the direction new lines are stacked in.</p>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<section>
+				<div>
+					<a><i class="far fa-envelope"></i></a>
+					<a><i class="fab fa-linkedin-in"></i></a>
+					<a><i class="fab fa-github"></i></a>
+					<a><i class="fas fa-briefcase"></i></a>
+				</div>
+				<div>
+			</section>
+			<!--section id="developed_by">
+			<a><i class="fas fa-laptop-code"></i> Developers</a>
+			<a href="https://github.com/NicolasEzequielZulaicaRivera" target="_blank" title="Nicolas Ezequiel Zulaica Rivera"><i class="fas fa-male"></i></a>
+			<a href="https://www.behance.net/ceciliazulaica" target="_blank" title="Cecilia Carolina Zulaica Rivera"><i class="fas fa-female"></i></a>
+			</section-->
+		</footer>
+	</div>
 </body>
 
 </html>

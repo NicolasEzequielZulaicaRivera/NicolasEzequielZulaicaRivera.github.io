@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NZR</title>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="CSS/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/726e180aed.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="JS/language.js"></script>
+  <script type="text/javascript" src="JS/script.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="navbar">
+			<div id="nav_logo">
+				
+				<a><i class="fas fa-code"></i></a>
+				<a>N. Zulaica</a>
+			</div>
+			
+			
+			<input type="checkbox" class="hamb_toggle">
+			<div class="hamb" > <div></div> </div>
+			
+			<div id="nav_opt">
+				<a href="index.html" >Home</a>
+				<a href="projects.html" class="selected" >Projects</a>
+				
+				<div>
+					<div id="lang_opt" style="display:none;">
+						<a onclick="change_lang('ES')" title="Español">ES</a>
+						<a onclick="change_lang('EN')" title="English">EN</a>
+						<a onclick="change_lang('CH')" title="中文">CH</a>
+					</div>
+					<a id="language" onclick="toggle_display('lang_opt','inline-block')"><i class="fas fa-globe"></i></a>
+					<a id="theme" onclick="toggleTheme()"><i class="fas fa-adjust"></i></a>
+				</div>
+			</div>
+			
+		</div>
+		<section id="main">
+		
+			<h1> Projects </h1>
+			<article class="projects">
+				<a target="_blank">
+					<img src="Media/projects/filler/windows_logo.png" alt="filler" class="dm_inverse">
+					<div><p>Filler</p></div>
+				</a>
+				<a target="_blank">
+					<img src="Media/projects/filler/philips_logo.png" alt="filler" class="dm_inverse">
+					<div><p>Filler</p></div>
+				</a>
+				<a target="_blank">
+					<img src="Media/projects/filler/adobe_logo.png" alt="filler" class="dm_inverse">
+					<div><p>Filler</p></div>
+				</a>
+				<a target="_blank">
+					<img src="Media/projects/filler/yingyang3.png" alt="filler" class="dm_inverse">
+					<div><p>Filler</p></div>
+				</a>
+				<a target="_blank">
+					<img src="Media/projects/fiuba_logo_black.png" alt="fiuba" class="dm_inverse">
+					<div><p>Uni works</p></div>
+				</a>
+				<a href="https://play.unity.com/u/z-vt92von" target="_blank">
+					<img src="Media/projects/unity_logo.png" alt="unity" class="dm_inverse">
+					<div><p>Unity projects</p></div>
+				</a>
+			</article>
+			
+		</section>
+		<footer>
+			<section>
+				<div>
+					<a href="mailto:nicolaszulaica@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+					<a target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/NicolasEzequielZulaicaRivera" target="_blank"><i class="fab fa-github"></i></a>
+					<a target="_blank"><i class="fas fa-briefcase"></i></a>
+				</div>
+				<div>
+			</section>
+			<!--section id="developed_by">
+			<a><i class="fas fa-laptop-code"></i> Developers</a>
+			<a href="https://github.com/NicolasEzequielZulaicaRivera" target="_blank" title="Nicolas Ezequiel Zulaica Rivera"><i class="fas fa-male"></i></a>
+			<a href="https://www.behance.net/ceciliazulaica" target="_blank" title="Cecilia Carolina Zulaica Rivera"><i class="fas fa-female"></i></a>
+			</section-->
+		</footer>
+	</div>
+</body>
+
+</html>
