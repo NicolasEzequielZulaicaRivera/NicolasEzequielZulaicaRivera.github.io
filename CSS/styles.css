@@ -101,7 +101,7 @@ a:active { color: #5A5;}
 #nav_logo a:hover{
 	color: var(--nav-it-tx-hover);
 }
-.hamb_toggle, .hamb {
+.hamb_toggle, .hamb, .hamb_toggle + label {
 	display:none;
 }
 #navbar #nav_opt{ 
