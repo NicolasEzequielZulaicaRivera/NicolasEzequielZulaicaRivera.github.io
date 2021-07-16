@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<style>
+.pais:hover{
+	fill-opacity: .5!important;
+}
+.pais{
+	stroke: #000!important; stroke-width: 3!important;
+}
+</style>
+<script type="text/javascript">
+
+function startFunc(){
+	paises = document.querySelectorAll(".pais");
+	Array.from(paises).forEach( (pais)=> {
+    pais.addEventListener('click', 
+    	function(element,id=pais.id){ 
+    		alert(id); 
+    	}
+    );
+});
+}
+</script>
+</head>
+<body onload="startFunc()">
+	<svg width='1000px' height='1000px' >
+		
+		<polygon class="pais" id="Argentina" points="120 220, 150 200, 200 250, 160 450, 150 450, 120 400" style="fill:#6183e8"/>
+
+		<polygon class="pais" id="Chile" points="100 200, 120 220, 120 400, 150 450, 110 410" style="fill:#e07345" />
+
+		<polygon class="pais" id="Brazil" points="100 100, 300 100, 200 250, 150 200" style="fill:#139813" />
+
+	</svg>
+</body>
+</html>
