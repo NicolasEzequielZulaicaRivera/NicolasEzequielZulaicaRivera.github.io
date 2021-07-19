@@ -2,17 +2,17 @@
 <head>
 
 <style>
-.pais:hover{
+path:hover{
 	fill-opacity: .5!important;
 }
-.pais{
-	stroke: #000!important; stroke-width: 3!important;
+path{
+	stroke: #000!important; stroke-width: 1!important;
 }
 </style>
 <script type="text/javascript">
 
 function startFunc(){
-	paises = document.querySelectorAll(".pais");
+	paises = document.querySelectorAll("path");
 	Array.from(paises).forEach( (pais)=> {
     pais.addEventListener('click', 
     	function(element,id=pais.id){ 
@@ -24,14 +24,34 @@ function startFunc(){
 </script>
 </head>
 <body onload="startFunc()">
-	<svg width='1000px' height='1000px' >
-		
-		<polygon class="pais" id="Argentina" points="120 220, 150 200, 200 250, 160 450, 150 450, 120 400" style="fill:#6183e8"/>
+	<svg
+   width="175.37202mm"
+   height="211.79518mm"
+   viewBox="0 0 175.37202 211.79518"
+   version="1.1"
+   id="svg8">
 
-		<polygon class="pais" id="Chile" points="100 200, 120 220, 120 400, 150 450, 110 410" style="fill:#e07345" />
+  <g
+     id="layer1"
+     transform="translate(-23.63452,-47.427412)">
+    <path
+       style="fill:#8cb9df;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.49334,242.948 10.15624,10.42351 5.61266,-28.86511 17.10525,-19.77794 -1.33634,-15.50164 -27.79604,-18.44159 -15.768898,13.0962 6.147199,28.59784 z"
+       id="Argentina" />
+    <path
+       style="fill:#78b478;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 132.03115,189.22682 104.23511,170.78523 83.922631,142.9892 34.745038,124.5476 24.054257,72.430041 75.102738,47.573975 119.73675,68.420998 168.3798,54.522983 l 30.46873,20.312483 -12.82894,37.685004 -18.97614,22.45064 16.57071,32.60688 z"
+       id="Brazil" />
+    <path
+       style="fill:#d4aa00;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 110.64958,253.37151 -1.60361,5.61266 -14.16529,-12.56167 -14.967093,-70.29188 8.552625,7.75081 12.027128,59.06657 z"
+       id="Chile" />
+    <path
+       style="fill:#d45500;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.745038,124.5476 -10.95805,13.36347 8.819894,21.38157 47.306703,16.83798 8.552627,7.75081 15.768898,-13.0962 -20.312479,-27.79603 z"
+       id="Peru" />
+  </g>
+</svg>
 
-		<polygon class="pais" id="Brazil" points="100 100, 300 100, 200 250, 150 200" style="fill:#139813" />
-
-	</svg>
 </body>
 </html>
